@@ -59,7 +59,12 @@ footer > div {
 	border-radius: 5px;
 }
 
-.logo, .banner, .menu {
+.menu {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.logo, .banner, .barra-de-navegacao {
 	margin-bottom: 10px;
 }
 
@@ -72,3 +77,13 @@ footer > div {
 	background-color: #222;
 	border-radius: 5px;
 }
+
+.row {
+	background-color: #222;
+}
+
+.tab-content {
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
