@@ -1,0 +1,34 @@
+.thumbnail {
+    /*border: 0 none;
+    box-shadow: none;*/
+    background: black;
+}
+
+body {
+	background-color: #0D0015;
+}
+
+div {
+	/*border: 1px solid white;*/
+}
+
+a {
+	color: #FFFFFF;
+}
+
+.nav-tabs.nav-justified > li > a {
+    border-bottom: 0 none;
+}
+
+.nav-tabs.nav-justified > li > a:hover{
+   color: black;
+}
+
+.nav-tabs.nav-justified > li > a:active  {
+	color: black; 
+	background-color: black; 
+}
+
+.logo img {
+	border-radius: 5px;
+}
