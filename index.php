@@ -25,12 +25,54 @@
 				<img class="img-responsive" src="img/logo.png">
 			</div><!-- Fim da Logo -->
 
-			<!-- Implementar Slider -->
+			<!-- Novidades -->
+			<div class="container banner">
+				<div id="novidades" class="carousel slide" data-ride="carousel">
+					<!-- Indicadores -->
+					<ol class="carousel-indicators">
+						<li data-target="#novidades" data-slide-to="0" class="active"></li>
+						<li data-target="#novidades" data-slide-to="1"></li>
+						<li data-target="#novidades" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Imagens -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/eletronica/1.jpg" alt="...">
+							<div class="carousel-caption">
+								<!-- Descrição das Imagens (Caso Haja) -->
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/rock/1.jpg" alt="...">
+							<div class="carousel-caption">
+								<!-- Descrição das Imagens (Caso Haja) -->
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/sertanejo/1.jpg" alt="...">
+							<div class="carousel-caption">
+								<!-- Descrição das Imagens (Caso Haja) -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Controles -->
+					<a class="left carousel-control" href="#novidades" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<a class="right carousel-control" href="#novidades" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Próximo</span>
+					</a>
+				</div>
+			</div>
 
 			<!-- Menu -->
 			<div class="container">
-				<nav class="navbar navbar-inverse">
-					<ul class="nav nav-tabs nav-justified" role="tablist">
+				<nav class="menu">
+					<ul class="nav nav-pills nav-justified" role="tablist">
 						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
 						<li role="presentation"><a href="#eletronica" aria-controls="eletronica" role="tab" data-toggle="tab">Eletrônica</a></li>
 						<li role="presentation"><a href="#rock" aria-controls="rock" role="tab" data-toggle="tab">Rock</a></li>
@@ -92,8 +134,10 @@
 
 		<!-- Jquery (Necessário para Rodar Bootstrap) -->
 		<script src="js/jquery.min.js"></script>
+
 		<!-- Javascript Bootstrap -->
 		<script src="js/bootstrap.min.js"></script>
+
     </body>
 </html>
 

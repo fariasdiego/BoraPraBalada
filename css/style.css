@@ -2,33 +2,73 @@
     /*border: 0 none;
     box-shadow: none;*/
     background: black;
+    border-color: #222;
+}
+
+a.thumbnail:hover {
+    border-color: gray;
 }
 
 body {
 	background-color: #0D0015;
 }
 
+
 div {
+	/* Usado para visualizar melhor as divisões (comentado por padrão) */
 	/*border: 1px solid white;*/
 }
 
-a {
-	color: #FFFFFF;
+.nav-pills.nav-justified > li > a {
+   color: gray;
 }
 
-.nav-tabs.nav-justified > li > a {
-    border-bottom: 0 none;
+.nav-pills.nav-justified > li > a:hover {
+   background-color: gray;
+   color: #222;
 }
 
-.nav-tabs.nav-justified > li > a:hover{
-   color: black;
-}
-
-.nav-tabs.nav-justified > li > a:active  {
-	color: black; 
-	background-color: black; 
+.nav-pills.nav-justified > li.active > a {
+	background-color: gray;
+	color: #222;
 }
 
 .logo img {
+	border-radius: 5px;
+}
+
+footer > div > em {
+	color: gray;
+	padding-top: 10px;
+ 	padding-bottom: 10px;
+}
+
+footer > div {
+	background-color: #222;
+	height: 50px;
+  	line-height: 50px;
+  	border-radius: 5px;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	margin: auto;
+}
+
+.carousel-inner {
+	/*background-color: #000000;*/
+	border-radius: 5px;
+}
+
+.logo, .banner, .menu {
+	margin-bottom: 10px;
+}
+
+.banner {
+	background-color: #000000;
+}
+
+.menu > ul > li {
+	border: 1px solid black;
+	background-color: #222;
 	border-radius: 5px;
 }
