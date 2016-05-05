@@ -18,7 +18,11 @@ var eletronica = [
 	new Balada(
 	'Duc',
 	'eletronica',
-	'https://goo.gl/EDnWiP')
+	'https://goo.gl/EDnWiP'),
+	new Balada(
+	'Viva',
+	'eletronica',
+	'https://goo.gl/EDnWip')
 ];
 
 var rock = [
@@ -47,6 +51,10 @@ var sertanejo = [
 	'https://goo.gl/EDnWiP'),
 	new Balada(
 	'Victoria Villa',
+	'sertanejo',
+	'https://goo.gl/EDnWiP'),
+	new Balada(
+	'Woods Samba',
 	'sertanejo',
 	'https://goo.gl/EDnWiP')
 ];
