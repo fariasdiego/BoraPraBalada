@@ -18,7 +18,7 @@ var eletronica = [
 	'Danghai',
 	'eletronica',
 	'https://goo.gl/maps/JUHJcCp6gYS2',
-	'Noite da Tequila 01/06/2016'),
+	'Noite da balalaika 01/06/2016'),
 	new Balada(
 	'Duc',
 	'eletronica',
