@@ -1,14 +1,3 @@
-.thumbnail {
-    /*border: 0 none;
-    box-shadow: none;*/
-    background: black;
-    border-color: #222;
-}
-
-a.thumbnail:hover {
-    border-color: gray;
-}
-
 body {
 	background-color: #0D0015;
 }
@@ -55,8 +44,12 @@ footer > div {
 }
 
 .carousel-inner {
-	/*background-color: #000000;*/
 	border-radius: 5px;
+}
+
+.item > img {
+	min-height: 300px;
+	max-height: 300px;
 }
 
 .menu {

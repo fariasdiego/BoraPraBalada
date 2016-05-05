@@ -25,7 +25,6 @@
 
 		<!-- Arquivos CSS para Caption Hover Effects -->
 		<link href="css/component.css" rel="stylesheet">
-		<link href="css/default.css" rel="stylesheet">
 
 	</head>
 
@@ -38,7 +37,19 @@
 				<img class="img-responsive" src="img/logo.png">
 			</div><!-- Fim da Logo -->
 
-			<!-- Novidades -->
+			<!-- Menu -->
+			<div class="container barra-de-navegacao">
+				<nav class="menu">
+					<ul class="nav nav-pills nav-justified" role="tablist">
+						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+						<li role="presentation"><a href="#eletronica" aria-controls="eletronica" role="tab" data-toggle="tab">Eletrônica</a></li>
+						<li role="presentation"><a href="#rock" aria-controls="rock" role="tab" data-toggle="tab">Rock</a></li>
+						<li role="presentation"><a href="#sertanejo" aria-controls="sertanejo" role="tab" data-toggle="tab">Sertanejo</a></li>
+					</ul>
+				</nav>
+			</div><!-- Fim do Menu -->
+
+			<!-- Slider -->
 			<div class="container banner">
 				<div id="novidades" class="carousel slide" data-ride="carousel">
 					<!-- Indicadores -->
@@ -51,19 +62,19 @@
 					<!-- Imagens -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="img/eletronica/vibe/foto.jpg" alt="...">
+							<img class="img-responsive" src="img/eletronica/danghai/foto.jpg" alt="">
 							<div class="carousel-caption">
 								<!-- Descrição das Imagens (Caso Haja) -->
 							</div>
 						</div>
 						<div class="item">
-							<img src="img/rock/crossroads/foto.jpg" alt="...">
+							<img class="img-responsive" src="img/rock/crossroads/foto.jpg" alt="">
 							<div class="carousel-caption">
 								<!-- Descrição das Imagens (Caso Haja) -->
 							</div>
 						</div>
 						<div class="item">
-							<img src="img/sertanejo/woods/foto.jpg" alt="...">
+							<img class="img-responsive" src="img/sertanejo/woods/foto.jpg" alt="">
 							<div class="carousel-caption">
 								<!-- Descrição das Imagens (Caso Haja) -->
 							</div>
@@ -80,19 +91,7 @@
 						<span class="sr-only">Próximo</span>
 					</a>
 				</div>
-			</div>
-
-			<!-- Menu -->
-			<div class="container barra-de-navegacao">
-				<nav class="menu">
-					<ul class="nav nav-pills nav-justified" role="tablist">
-						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-						<li role="presentation"><a href="#eletronica" aria-controls="eletronica" role="tab" data-toggle="tab">Eletrônica</a></li>
-						<li role="presentation"><a href="#rock" aria-controls="rock" role="tab" data-toggle="tab">Rock</a></li>
-						<li role="presentation"><a href="#sertanejo" aria-controls="sertanejo" role="tab" data-toggle="tab">Sertanejo</a></li>
-					</ul>
-				</nav>
-			</div><!-- Fim do Menu -->
+			</div><!-- Fim do Slider -->
 
 		</header><!-- Fim do Cabeçalho -->
 
@@ -102,34 +101,32 @@
 			<!-- Fotos das Baladas -->
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane fade in active" id="home">
-					<div class="container">
-						<div class="row">
-							<script>document.write(mostraImagens(eletronica) + mostraImagens(rock) + mostraImagens(sertanejo))</script>
-						</div>
-					</div>
+					<ul class="grid cs-style-4 container">
+						<script>mostraImagens(eletronica) + mostraImagens(rock) + mostraImagens(sertanejo)</script>
+					</ul>
 				</div>
 
 				<div role="tabpanel" class="tab-pane fade" id="eletronica">
 					<div class="container">
-						<div class="row">
-							<script>document.write(mostraImagens(eletronica))</script>
-						</div>
+						<ul class="grid cs-style-4 container">
+							<script>mostraImagens(eletronica)</script>
+						</ul>
 					</div>
 				</div>
 
 				<div role="tabpanel" class="tab-pane fade" id="rock">
 					<div class="container">
-						<div class="row">
-							<script>document.write(mostraImagens(rock))</script>
-						</div>
+						<ul class="grid cs-style-4 container">
+							<script>mostraImagens(rock)</script>
+						</ul>
 					</div>
 				</div>
 
 				<div role="tabpanel" class="tab-pane fade" id="sertanejo">
 					<div class="container">
-						<div class="row">
-							<script>document.write(mostraImagens(sertanejo))</script>
-						</div>
+						<ul class="grid cs-style-4 container">
+							<script>mostraImagens(sertanejo)</script>
+						</ul>
 					</div>
 				</div>
 			</div><!-- Fim das Fotos das Baladas -->
