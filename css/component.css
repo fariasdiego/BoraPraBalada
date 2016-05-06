@@ -1,6 +1,5 @@
 .grid {
 	padding: 20px;
-	max-width: 1300px;
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
@@ -10,9 +9,10 @@
 
 .grid li {
 	display: inline-block;
-	width: 340px;
+	/*width deve ser a largura da imagem + 2 x padding*/
+	width: 320px;
 	margin: 0;
-	padding: 20px;
+	padding: 10px;
 	text-align: left;
 	position: relative;
 }
@@ -63,14 +63,33 @@
 	bottom: 35px;
 }
 
-@media screen and (max-width: 31.5em) {
-	.grid {
-		padding: 10px 10px 100px 10px;
-	}
+/*
+Quando a tela chegar a essa dimensão, deve-se começar a diminuir o tamanho dos ícones.
+O tamanho mínimo dos ícones foi definido em 250px.
+O valor de max-width(largura máxima) é definido por:
+width de li + (2 x padding de .grid) + 4
+ */
+@media screen and (max-width: 364px) {
 	.grid li {
 		width: 100%;
 		min-width: 250px;
 	}
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid {
+    width: 970px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid {
+    width: 1170px;
+  }
 }
 
 .cs-style-4 li {
