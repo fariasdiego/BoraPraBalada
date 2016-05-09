@@ -75,3 +75,14 @@ function mostraGaleria(estilo) {
 	return document.write(estrutura);
 }
 
+$(function(){   
+	var nav = $('#menu');   
+	var logo = $('#logo');
+	$(window).scroll(function () { 
+		if ($(this).scrollTop() > logo.height()) { 
+			nav.addClass("menu-fixo"); 
+		} else { 
+			nav.removeClass("menu-fixo"); 
+		} 
+	});  
+});
