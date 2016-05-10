@@ -77,7 +77,7 @@ function mostraGaleria(estilo) {
 
 $(function(){   
 	var nav = $('#menu');   
-	var logo = $('#banner');
+	var logo = $('#capa');
 	$(window).scroll(function () { 
 		if ($(this).scrollTop() > (logo.height() + nav.height())) { 
 			nav.addClass("navbar-fixed-top"); 

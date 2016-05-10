@@ -29,7 +29,7 @@ div, nav, ul {
 	color: #222;
 }
 
-#banner img {
+#capa img {
 	border-radius: 5px;
 }
 
@@ -55,16 +55,16 @@ footer > div {
 	max-height: 300px;
 }
 
-#menu, #banner {
+#menu, #capa {
 	padding-left: 0;
 	padding-right: 0;
 }
 
-#banner, .banner, #menu {
+#capa, .capa, #menu {
 	margin-bottom: 10px;
 }
 
-.banner {
+.capa {
 	background-color: #222;
 }
 

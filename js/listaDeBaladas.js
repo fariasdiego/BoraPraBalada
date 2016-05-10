@@ -56,20 +56,56 @@ var sertanejo = [
 	'Woods',
 	'sertanejo',
 	'https://goo.gl/maps/eQYcn4vkG2s',
-	'https://www.google.com.br/',
-	10),
+	'https://google.com.br',
+	15),
 	new Balada(
 	'Shed',
 	'sertanejo',
 	'https://goo.gl/maps/ZLopQZgQLiD2',
-	'https://www.google.com.br/',
-	12),
+	'https://google.com.br',
+	14),
 	new Balada(
 	'Victoria Villa',
 	'sertanejo',
 	'https://goo.gl/maps/2UawmFQaLTN2',
-	'https://www.google.com.br/',
-	6)
+	'https://google.com.br',
+	10),
+	new Balada(
+	'Rodeo',
+	'sertanejo',
+	'https://goo.gl/maps/vMU48aT38642',
+	'https://google.com.br',
+	10),
+	new Balada(
+	'Holdem',
+	'sertanejo',
+	'https://goo.gl/maps/SZNvYPN578R2',
+	'https://google.com.br',
+	9),
+	new Balada(
+	'Territorio Sertanejo',
+	'sertanejo',
+	'https://goo.gl/maps/iau8tSxmdtt',
+	'https://google.com.br',
+	8),
+	new Balada(
+	'Emporio Sao Francisco',
+	'sertanejo',
+	'https://goo.gl/maps/9QfqmVgEeQN2',
+	'https://google.com.br',
+	7),
+	new Balada(
+	'Selfie Brasil',
+	'sertanejo',
+	'https://goo.gl/maps/58uW1uuxj9z',
+	'https://google.com.br',
+	7),
+	new Balada(
+	'Santa Marta',
+	'sertanejo',
+	'https://goo.gl/maps/Dz3c3pUFC5D2',
+	'https://google.com.br',
+	7)
 ];
 
 var todos = eletronica.concat(rock, sertanejo);
