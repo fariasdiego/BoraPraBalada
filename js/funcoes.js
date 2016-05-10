@@ -59,7 +59,7 @@ function mostraGaleria(estilo) {
 				bonus = calculaBonus(estilo);
 				estrutura += 
 		            '<li>'+
-		            	'<figure>'+
+		            	'<figure class="taphover">'+
 		                	'<img class="img-responsive icone" src="' + estilo[indice].icone + '" alt="">'+
 		                	'<figcaption>'+
 		                		'<div class="logo"><img src="' + estilo[indice].logo + '" alt="' + estilo[indice].nome + '"></div>'+
@@ -86,3 +86,15 @@ $(function(){
 		} 
 	});  
 });
+
+$('figure.taphover').on("touchstart", function (e) {
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass('hover');
+        $('figure.taphover').not(this).removeClass('hover');
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});	

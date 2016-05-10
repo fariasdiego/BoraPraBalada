@@ -82,8 +82,8 @@
 	border-radius: 5px;
 }
 
-.no-touch .cs-style-4 figure:hover figcaption,
-.cs-style-4 figure.cs-hover figcaption {
+.cs-style-4 .taphover:hover figcaption,
+.cs-style-4 .taphover.hover figcaption {
 	opacity: 1;
 	-webkit-transform: rotateY(0deg);
 	-moz-transform: rotateY(0deg);
