@@ -9,8 +9,8 @@
 
 .grid li {
 	display: inline-block;
-	/*width deve ser a largura da imagem + 2 x padding*/
-	width: 320px;
+	width: 100%;
+	min-width: 15em;
 	margin: 0;
 	padding: 10px;
 	text-align: left;
@@ -22,96 +22,33 @@
 	position: relative;
 }
 
-.grid figure img {
+.grid figure div .icone {
 	max-width: 100%;
 	display: block;
 	position: relative;
-	border-radius: 5px;
 }
 
 .grid figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 10px;
 	background: #0D0015;
 }
 
-.grid figcaption img {
-	margin: 0;
-	position: absolute;
-	left: 0;
-	top: 5px;
-	max-height: 100px;
-}
-
-.grid figcaption .btn-group {
-	margin: 0;
-	position: absolute;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	bottom: 0;
-}
-
-.grid figcaption .botao {
-	margin: 0;
-	position: absolute;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	bottom: 35px;
-}
-
-/*
-Quando a tela chegar a essa dimensão, deve-se começar a diminuir o tamanho dos ícones.
-O tamanho mínimo dos ícones foi definido em 250px.
-O valor de max-width(largura máxima) é definido por:
-width de li + (2 x padding de .grid) + 4
- */
-@media screen and (max-width: 364px) {
-	.grid li {
-		width: 100%;
-		min-width: 250px;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.grid {
-	width: 750px;
-	}
-
-	.menu-fixo {
-	margin-left: -375px;
-	}
-}
-
-@media screen and (min-width: 992px) {
-	.grid {
-	width: 970px;
-	}
-	
-	.menu-fixo {
-	margin-left: -485px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.grid {
-	width: 1170px;
-	}
-	
-	.menu-fixo {
-	margin-left: -585px;
-	}
-}
+/* Animação */
 
 .cs-style-4 li {
+	-webkit-perspective: 1700px;
+	-moz-perspective: 1700px;
 	perspective: 1700px;
+	-webkit-perspective-origin: 0 50%;
+	-moz-perspective-origin: 0 50%;
 	perspective-origin: 0 50%;
 }
 
 .cs-style-4 figure {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
 
@@ -119,28 +56,65 @@ width de li + (2 x padding de .grid) + 4
 	overflow: hidden;
 }
 
-.cs-style-4 figure img {
+.cs-style-4 figure .icone {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
 	transition: transform 0.4s;
-}
-
-.no-touch .cs-style-4 figure:hover img,
-.cs-style-4 figure.cs-hover img {
-	transform: translateX(25%);
+	border-radius: 5px;
 }
 
 .cs-style-4 figcaption {
 	height: 100%;
-	width: 50%;
+	width: 100%;
 	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
 	transform-origin: 0 0;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
 	transform: rotateY(-90deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
 	transition: transform 0.4s, opacity 0.1s 0.3s;
+	border-radius: 5px;
 }
 
 .no-touch .cs-style-4 figure:hover figcaption,
 .cs-style-4 figure.cs-hover figcaption {
 	opacity: 1;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
 	transform: rotateY(0deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
 	transition: transform 0.4s, opacity 0.1s;
+}
+
+/*width de li + (2 x padding de .grid) + 4*/
+@media (min-width: 364px) {
+	.grid li {
+		/*width deve ser a largura da imagem + 2 x padding*/
+		width: 320px;
+	}
+}
+
+@media (min-width: 768px) {
+	.grid {
+	width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.grid {
+	width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.grid {
+	width: 1170px;
+	}
 }

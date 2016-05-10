@@ -5,8 +5,8 @@
 
 body {
 	font-family: "Big Noodle Titling";
-	font-size: 22px;
 	background-color: #0D0015;
+	font-size: 16px;
 }
 
 
@@ -29,7 +29,7 @@ div, nav, ul {
 	color: #222;
 }
 
-#logo img {
+#banner img {
 	border-radius: 5px;
 }
 
@@ -55,12 +55,12 @@ footer > div {
 	max-height: 300px;
 }
 
-#menu, #logo {
+#menu, #banner {
 	padding-left: 0;
 	padding-right: 0;
 }
 
-#logo, .banner, #menu {
+#banner, .banner, #menu {
 	margin-bottom: 10px;
 }
 
@@ -74,6 +74,34 @@ footer > div {
 	border-radius: 5px;
 }
 
+#menu > ul > li > a, figcaption > .btn-group > a {
+	padding: 0.15em;
+}
+
+figcaption > .logo > img {
+	position: absolute;
+	top: 4em;
+	left: 50%;
+	margin-top: 0.5em;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	width: 8em;
+	border-radius: 5px;
+}
+
+figcaption > .btn-group {
+	position: absolute;
+	bottom: -0.5em;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+.grid figcaption .btn-group > a {
+	font-size: 1.1em;
+	padding: 0.1em 0.5em;
+}
+
 .tab-content {
 	margin-bottom: 10px;
 	border-radius: 5px;
@@ -83,9 +111,62 @@ footer > div {
 	border-radius: 5px;
 }
 
-.menu-fixo {
-	position: fixed;
-	top: 0;
-	z-index: 99;
-	left: 50%;
+@media (min-width: 364px) {
+	#menu {
+		font-size: 1.1em;
+	}
+
+	figcaption > .logo > img {
+		top: 5em;
+		width: 10em;
+	}
+
+	footer {
+		font-size: 1.1em;
+	}
+}
+
+@media (min-width: 768px) {
+	#menu {
+		font-size: 1.2em;
+	}
+
+	figcaption > .logo > img {
+		top: 5em;
+		width: 10em;
+	}
+
+	footer {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 992px) {
+	#menu {
+		font-size: 1.3em;
+	}
+
+	figcaption > .logo > img {
+		top: 5em;
+		width: 10em;
+	}
+
+	footer {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: 1200px) {
+	#menu {
+		font-size: 1.5em;
+	}
+
+	figcaption > .logo > img {
+		top: 5em;
+		width: 10em;
+	}
+
+	footer {
+		font-size: 1.5em;
+	}
 }
