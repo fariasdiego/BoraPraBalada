@@ -111,6 +111,11 @@ figcaption > .btn-group {
 	border-radius: 5px;
 }
 
+#socialmedia > a > img {
+	margin-top: 8px;
+	border-radius: 5px;
+}
+
 @media (min-width: 364px) {
 	#menu {
 		font-size: 1.1em;
