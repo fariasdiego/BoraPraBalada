@@ -38,17 +38,11 @@
 /* Animação */
 
 .cs-style-4 li {
-	-webkit-perspective: 1700px;
-	-moz-perspective: 1700px;
 	perspective: 1700px;
-	-webkit-perspective-origin: 0 50%;
-	-moz-perspective-origin: 0 50%;
 	perspective-origin: 0 50%;
 }
 
 .cs-style-4 figure {
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
 
@@ -57,8 +51,6 @@
 }
 
 .cs-style-4 figure .icone {
-	-webkit-transition: -webkit-transform 0.4s;
-	-moz-transition: -moz-transform 0.4s;
 	transition: transform 0.4s;
 	border-radius: 5px;
 }
@@ -67,17 +59,9 @@
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
 	transform-origin: 0 0;
-	-webkit-transform: rotateY(-90deg);
-	-moz-transform: rotateY(-90deg);
 	transform: rotateY(-90deg);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
 	transition: transform 0.4s, opacity 0.1s 0.3s;
 	border-radius: 5px;
 }
@@ -85,11 +69,7 @@
 .cs-style-4 .taphover:hover figcaption,
 .cs-style-4 .taphover.hover figcaption {
 	opacity: 1;
-	-webkit-transform: rotateY(0deg);
-	-moz-transform: rotateY(0deg);
 	transform: rotateY(0deg);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
 	transition: transform 0.4s, opacity 0.1s;
 }
 

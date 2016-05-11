@@ -4,8 +4,9 @@ function Balada(nome, estilo, mapa, site, bonusMaximo) {
 	this.mapa = mapa;
 	this.site = site;
 	this.bonusMaximo = bonusMaximo;
-	this.foto = 'img/' + this.estilo + '/' + this.nome.toLowerCase().replace(/\s/g,'') + '/foto.jpg';
-	this.logo = 'img/' + this.estilo + '/' + this.nome.toLowerCase().replace(/\s/g,'') + '/logo.jpg';
+	this.nomeLimpo = minusculoSemEspacoAcento(this.nome);
+	this.foto = 'img/' + this.estilo + '/' + this.nomeLimpo + '/foto.jpg';
+	this.logo = 'img/' + this.estilo + '/' + this.nomeLimpo + '/logo.jpg';
 	this.icone = 'img/' + this.estilo + '/icone.jpg';
 }
 
@@ -83,13 +84,13 @@ var sertanejo = [
 	'https://google.com.br',
 	9),
 	new Balada(
-	'Territorio Sertanejo',
+	'Território Sertanejo',
 	'sertanejo',
 	'https://goo.gl/maps/iau8tSxmdtt',
 	'https://google.com.br',
 	8),
 	new Balada(
-	'Emporio Sao Francisco',
+	'Empório São Francisco',
 	'sertanejo',
 	'https://goo.gl/maps/9QfqmVgEeQN2',
 	'https://google.com.br',

@@ -15,25 +15,45 @@
 		<script src="js/jquery.min.js"></script>
 
     	<!-- Nosso Arquivo CSS -->
+
     	<link href="css/style.css" rel="stylesheet">
+    	<!-- Nosso Arquivo JS de Funções -->
+		<script src="js/funcoes.js"></script>
 
     	<!-- Nosso Arquivo JS para Lista de Baladas -->
 		<script src="js/listaDeBaladas.js"></script>
 
-		<!-- Nosso Arquivo JS para Galeria -->
-		<script src="js/funcoes.js"></script>
-
 		<!-- Arquivos CSS para Caption Hover Effects -->
 		<link href="css/component.css" rel="stylesheet">
 
-		<!-- Arquivos JS para Caption Hover Effects -->
-		<script src="js/modernizr.custom.js"></script>
+		<!-- Javascript Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
 
 	</head>
 
 	<body>
 		<!-- Cabeçalho -->
 		<header>
+			<!-- Login e Social Media -->
+			<nav id="login" class="container navbar navbar-inverse">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#login-mobile" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="login-mobile">
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="LOGIN">
+							<input type="text" class="form-control" placeholder="SENHA">
+						</div>
+						<button type="submit" class="btn btn-default">LOGIN</button>
+					</form>
+				</div>
+			</nav>
 
 			<!-- Capa -->
 			<div id="capa" class="container">
@@ -133,12 +153,6 @@
 				</div>
 
 		</footer><!-- Fim do Rodapé -->
-
-		<!-- Javascript Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-
-		<!-- Arquivos JS para Caption Hover Effects para tela touch -->
-		<script src="js/toucheffects.js"></script>
     </body>
 </html>
 		

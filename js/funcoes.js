@@ -1,4 +1,25 @@
-/*Gera um número randômico de 0 a max-1. Utilizado gerar um índice randômico de uma lista, que começa em 0*/
+function tiraAcento(palavra) {
+	comAcento = "áàãâäéèêëíìîïóòõôöúùûüçÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÇ";
+    semAcento = "aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC";
+    auxiliar = ''
+    for(letra in palavra) {
+    	for(letraAcentuada in comAcento) {
+			if (palavra[letra] == comAcento[letraAcentuada]) {
+				auxiliar += semAcento[letraAcentuada];
+			}
+		}
+		if(auxiliar.length == letra) {
+			auxiliar += palavra[letra];
+		}
+	}
+	return auxiliar;
+}
+
+function minusculoSemEspacoAcento(palavra) {
+	return tiraAcento(palavra.toLowerCase().replace(/\s/g,''));
+}
+
+/*Gera um número randômico de 0 a max-1. Utilizado para gerar um índice randômico de uma lista, que começa em 0*/
 function numeroRandomico(max) {
 	return Math.floor(Math.random() * max)
 }
@@ -58,7 +79,7 @@ function mostraGaleria(estilo) {
 			for (indice in estilo) {
 				bonus = calculaBonus(estilo);
 				estrutura += 
-		            '<li>'+
+		            '<li id="' + estilo[indice].nome + '">'+
 		            	'<figure class="taphover">'+
 		                	'<img class="img-responsive icone" src="' + estilo[indice].icone + '" alt="">'+
 		                	'<figcaption>'+
@@ -66,7 +87,7 @@ function mostraGaleria(estilo) {
 		                		'<div class="btn-group" role="group">'+
 		                			'<a type="button" class="btn btn-default" role="button" href="' + estilo[indice].site + '" target="_blank">Site</a>'+
 									'<a type="button" class="btn btn-default" role="button" href="' + estilo[indice].mapa + '" target="_blank">Mapa</a>'+
-									'<a type="button" class="btn btn-default" role="button" href="#" onClick="mostraBonus(' + bonus + ')">Bônus</a>'+
+									'<a type="button" class="btn btn-default" role="button" href="#' + estilo[indice].nomeLimpo + '" onClick="mostraBonus(' + bonus + ')">Bônus</a>'+
 								'</div>'+
 		                	'</figcaption>'+
 		                '</figure>'+
@@ -78,8 +99,9 @@ function mostraGaleria(estilo) {
 $(function(){   
 	var nav = $('#menu');   
 	var logo = $('#capa');
+	var login = $('#login');
 	$(window).scroll(function () { 
-		if ($(this).scrollTop() > (logo.height() + nav.height())) { 
+		if ($(this).scrollTop() > (logo.height() + nav.height() + login.height())) { 
 			nav.addClass("navbar-fixed-top"); 
 		} else { 
 			nav.removeClass("navbar-fixed-top"); 
