@@ -112,8 +112,9 @@ figcaption > .btn-group {
 }
 
 #socialmedia > a > img {
-	margin-top: 8px;
+	margin: 8px;
 	border-radius: 5px;
+	height: 34px;
 }
 
 @media (min-width: 364px) {
