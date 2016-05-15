@@ -16,16 +16,16 @@ div, nav, ul {
 }
 
 .nav-pills.nav-justified > li > a {
-   color: gray;
+   color: #C0C0C0;
 }
 
 .nav-pills.nav-justified > li > a:hover {
-   background-color: gray;
+   background-color: #C0C0C0;
    color: #222;
 }
 
 .nav-pills.nav-justified > li.active > a {
-	background-color: gray;
+	background-color: #C0C0C0;
 	color: #222;
 }
 
@@ -34,7 +34,7 @@ div, nav, ul {
 }
 
 footer > div > em {
-	color: gray;
+	color: #C0C0C0;
 	padding-top: 10px;
  	padding-bottom: 10px;
 }
